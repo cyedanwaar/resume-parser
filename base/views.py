@@ -76,12 +76,10 @@ def parse_resume(file):
             except json.JSONDecodeError as e:
                 return f"Error decoding JSON from response for {key}: {str(e)}"
 
-    # Merge dictionaries
     merged_dict = {}
     for d in parsed_dicts.values():
         merged_dict.update(d)
 
-    # Convert the merged dictionary back to a JSON string
     merged_json = json.dumps(merged_dict, indent=2)
 
     return merged_json
@@ -99,19 +97,17 @@ class ParsedResumeView(APIView):
             return Response({"error": "Invalid file type. Please upload a PDF."}, status=status.HTTP_400_BAD_REQUEST)
         
         try:
-            # Parse the resume
             parsed_data = parse_resume(uploaded_file)
 
-            # Create a new ParsedResume instance
             parsed_resume = ParsedResume(
-                name=uploaded_file.name.split('.')[0],  # Optionally set the name if you extract it from `parsed_data`
+                name=uploaded_file.name.split('.')[0],
                 resume=uploaded_file,
-                parsed_data=parsed_data  # Store as a JSON string
+                parsed_data=parsed_data
             )
             parsed_resume.save()
 
             serializer = ParsedResumeSerializer(parsed_resume)
-            return Response({"message": "Resume parsed and saved successfully", "data": serializer.data}, status=status.HTTP_200_OK)
+            return Response({"message": "Resume parsed successfully", "data": serializer.data}, status=status.HTTP_200_OK)
         
         except Exception as e:
             return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
