@@ -1,0 +1,75 @@
+{
+  "Name": "Hayden Smith",
+  "age": null,
+  "phone number": "04 501 123 456",
+  "language": null,
+  "email address": "haydensmith@email.com",
+  "home address": "214 Mitre Avenue, Park Hill, 3045",
+  "introduction": "I am reliable hard working Year 11 student seeking casual or part-time customer service work in a sports retail environment. Having played soccer for nine years and a keen all-round sports enthusiast, I am looking to contribute knowledge and proven communications skills.",
+  "Educational details": [
+    {
+      "Name of the Degree": "Year 11",
+      "institute of Degree awarded": "Park Hill Secondary College",
+      "field of study": "Maths, English, Business Management, VET studies in Sport and Recreation",
+      "Degree start date": null,
+      "Degree end date": null
+    }
+  ],
+  "certifications": [],
+  "JobExperiences": [
+    {
+      "position_held": "Customer service (volunteer)",
+      "short_job_description": "Served customers, Handled cash including operating of cash register",
+      "company_name": "Park Hill Soccer Club Canteen",
+      "job_start_date": "December 2016",
+      "job_end_date": "March 2017"
+    },
+    {
+      "position_held": "Newspaper deliverer",
+      "short_job_description": "Delivered weekend newspapers to houses",
+      "company_name": "Argo Newsagency",
+      "job_start_date": "June 2016",
+      "job_end_date": "February 2017"
+    }
+  ],
+  "soft_skills": [
+    "Customer service",
+    "Communication",
+    "Teamwork",
+    "Organization",
+    "Problem-solving",
+    "Responsibility",
+    "Numeracy",
+    "Cash handling"
+  ],
+  "projects": [
+    {
+      "project_name": "Park Hill Soccer Club Canteen",
+      "short_description": "Customer service (volunteer)",
+      "project_start_date": "December 2016",
+      "project_end_date": "March 2017"
+    },
+    {
+      "project_name": "Argo Newsagency",
+      "short_description": "Newspaper deliverer",
+      "project_start_date": "June 2016",
+      "project_end_date": "February 2017"
+    },
+    {
+      "project_name": "Soccer umpire for under 14 team",
+      "short_description": "Park Hill Soccer Club",
+      "project_start_date": "2016",
+      "project_end_date": "current"
+    },
+    {
+      "project_name": "Assistant Coach for junior players",
+      "short_description": "Park Hill Soccer Club",
+      "project_start_date": "2017",
+      "project_end_date": "current"
+    }
+  ],
+  "linkedin profile": null,
+  "github profile": null,
+  "facebook profile": null,
+  "instagram profile": null
+}
